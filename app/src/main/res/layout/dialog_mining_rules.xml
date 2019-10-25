@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+>
+    <TextView
+        android:id="@+id/iv_mining_rules_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_mining_rules_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-70dp"
+        android:background="@mipmap/iv_mining_rules_bg"
+        android:gravity="center|left"
+        android:maxEms="15"
+        android:padding="55dp"
+        android:text="
+1.挖矿时间为2018年10月15日至2018年11月15日
+2.比特易将每天放入
+3.每天8点和20:00分别释放一次挖矿奖励，用户可在此时间后手动领取挖矿奖励，领取后进入下一时段挖矿
+4.用户每时段获得的奖励由参与该时段挖矿的时间及算力共同决定
+5.奖励发放形式：挖矿结束后，用户获得的挖矿奖励将放入比特易区块链策略投资基金中，三个月后用户可提现收益部分(往期最高三个月最高收益60%)
+6.比特易拥有对挖矿活动的最终解释权"
+        android:textColor="#626A75"
+        android:textSize="@dimen/font_14"
+    />
+    <TextView
+        android:id="@+id/iv_mining_rules_head"
+        android:layout_width="184dp"
+        android:layout_height="44dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/iv_mining_rules_head"
+        android:gravity="center"
+        android:text="挖矿规则"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_14"
+        android:textStyle="bold"
+    />
+    <ImageView
+        android:id="@+id/iv_mining_rules_close"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/iv_mining_rules_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:src="@mipmap/iv_mining_rules_close"
+    />
+
+</RelativeLayout>

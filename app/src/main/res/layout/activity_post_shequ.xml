@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="@color/color_fafa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+        <ImageView
+                android:id="@+id/img_fan_hui"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/margin_16"
+                android:scaleType="center"
+                android:src="@mipmap/back"/>
+
+        <TextView
+                android:text="编辑"
+                android:textColor="@color/color_525866"
+                android:textSize="@dimen/font_18"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/post"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="发布"
+                android:textColor="@color/color_308CDD"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:background="@drawable/bg_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <View
+
+                android:background="#ffe6ebf0"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+    </RelativeLayout>
+
+    <EditText
+            android:id="@+id/edittext"
+            android:hint="分享新鲜事..."
+            android:textColor="@color/color_626A75"
+            android:textColorHint="@color/color_626A75_60"
+            android:textSize="16sp"
+            android:gravity="top"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textCursorDrawable="@drawable/edittext_cursor_bg"
+            android:background="@null"
+    />
+
+</LinearLayout>

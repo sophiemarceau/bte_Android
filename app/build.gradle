@@ -1,0 +1,254 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.btetop"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 50
+        versionName "2.1.9"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        flavorDimensions "color"
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'arm64-v8a', 'armeabi-v7a', 'mips64', 'mips'
+            // 还可以添加 , , ,
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "9d96eadfeb7c65c9283a5078", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+                XIAOMI_APPKEY: "MI-5961770989947",//小米平台注册的 appkey
+                XIAOMI_APPID : "MI-2882303761517709947",//小米平台注册的 appid
+                HUAWEI_APPID : "db7ae19e645f651d55d61cae35ca10bf",//华为平台注册的 appid
+                MEIZU_APPKEY : "MZ-RDJ4K6D7aBrkl9LYeuLh",//魅族平台注册的 appkey
+                MEIZU_APPID  : "MZ-306488",//魅族平台注册的 appid
+        ]
+        multiDexEnabled true
+    }
+    useLibrary 'org.apache.http.legacy'
+
+    signingConfigs {
+        debug {
+            storeFile file("./keystore/btetop.jks")
+            storePassword "123456"
+            keyAlias "btetop"
+            keyPassword "123456"
+            v2SigningEnabled true
+        }
+
+        release {
+            storeFile file { "./keystore/btetop.jks" }
+            storePassword "123456"
+            keyAlias "btetop"
+            keyPassword "123456"
+            v2SigningEnabled true
+        }
+    }
+
+
+    buildTypes {
+        all {
+            buildConfigField "String", "GIT_REVISION", "\"${getGitRevision()}\""
+
+        }
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField "String", "BUG_TAG_KEY", DEBUG_BUG_TAG_KEY
+            buildConfigField "String", "BUILD_TIME", "\"2008-02-02\""
+
+        }
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField "String", "BUG_TAG_KEY", RELEASE_BUG_TAG_KEY
+            buildConfigField "String", "BUILD_TIME", "\"${getDate()}\""
+
+        }
+        beta{
+            initWith release
+            matchingFallbacks = ['release']
+            buildConfigField "String", "BUG_TAG_KEY", DEBUG_BUG_TAG_KEY
+        }
+        // 自定义输出配置
+        applicationVariants.all { variant ->
+            variant.outputs.all { output ->
+                println output.name
+                if (output.name.equals("release")) {
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def buildType = variant.variantData.variantConfiguration.buildType.name
+
+                        def fileName = "btetop_v${defaultConfig.versionName}_${getDate()}_${getGitRevision()}_${buildType}.apk"
+                        outputFileName = fileName;
+                    }
+                }
+
+                if (output.name.equals("beta")) {
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def buildType = variant.variantData.variantConfiguration.buildType.name
+
+                        def fileName = "btetop_v${defaultConfig.versionName}_${getDate()}_${getGitRevision()}_${buildType}.apk"
+                        outputFileName = fileName;
+                    }
+                }
+            }
+        }
+
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            resources.srcDirs = ['src']
+        }
+    }
+
+
+
+
+
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+
+    lintOptions {
+        // 防止在发布的时候出现因MissingTranslation导致Build Failed!
+        disable 'MissingTranslation'
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMdd-HHmmss')
+    return formattedDate
+}
+
+def getGitRevision() {
+    return "git rev-parse --short HEAD".execute().text.trim()
+}
+
+
+dependencies {
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+
+    implementation 'com.orhanobut:logger:2.1.1'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.jpeng:JPTabBar:1.1.7'
+    implementation 'com.youth.banner:banner:1.4.10'
+    implementation 'me.drakeet.multitype:multitype:3.3.3'
+    implementation project(':mylibrary')
+    //友盟
+    implementation 'com.umeng.sdk:common:1.5.0'
+    implementation 'com.umeng.sdk:analytics:7.5.0'
+    implementation files('libs/umeng_social_tool.jar')
+    implementation files('libs/umeng-share-QQ-simplify-6.9.2.jar')
+    implementation files('libs/SocialSDK_WeChat_Simplify.jar')
+    implementation files('libs/SocialSDK_Sina_Simplify.jar')
+    implementation files('libs/umeng_social_shareview.jar')
+    implementation files('libs/umeng_social_api.jar')
+    implementation files('libs/umeng_social_net.jar')
+    //EventBus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    //smartrefresh
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.5.1'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.5.1'
+    //沉浸式状态栏
+    implementation 'com.gyf.barlibrary:barlibrary:2.3.0'
+    //自定义textview 解决tab 图标问题
+    implementation 'com.github.ithedan:TextViewDrawable:v1.0'
+    //跑马灯
+    implementation 'com.sunfusheng:marqueeview:1.3.3'
+    implementation project(':MPChartLib')
+    implementation project(path: ':klinelib')
+    //FlycoTabLayout  https://github.com/H07000223/FlycoTabLayout
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    //https://github.com/square/leakcanary
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    betaImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    //https://github.com/Blankj/AndroidUtilCode
+    implementation 'com.blankj:utilcode:1.16.4'
+    //    compile 'com.google.android.gms:play-services-gcm:9.4.0'
+    //    compile 'com.hyphenate:hyphenate-sdk:3.3.0'
+    implementation project(path: ':easeui')
+    debugImplementation 'com.bugtags.library:bugtags-lib:3.0.0@aar'
+    releaseImplementation 'com.bugtags.metrics:bugtags-lib:3.0.0@aar'
+    betaImplementation 'com.bugtags.library:bugtags-lib:3.0.0@aar'
+    //https://github.com/Curzibn/Luban 图片压缩  可能是最接近微信朋友圈的图片压缩算法
+    implementation 'top.zibin:Luban:1.1.8'
+    /*极光推送*/
+    implementation 'cn.jiguang.sdk:jpush:3.1.5'
+    implementation 'cn.jiguang.sdk:jcore:1.2.3'
+    implementation 'cn.jiguang.sdk.plugin:xiaomi:3.1.5'
+    implementation 'cn.jiguang.sdk.plugin:meizu:3.1.5'
+    implementation 'cn.jiguang.sdk.plugin:huawei:3.1.5'
+    /*极光推送*/
+    //网易短信验证 https://github.com/yidun/captcha-android-demo
+    implementation(name: 'captcha-release_v2.4.3.2', ext: 'aar')
+
+    //轮播图 https://github.com/youth5201314/banner
+    implementation 'com.youth.banner:banner:1.4.10'  //最新版本
+
+    //开关按钮 https://github.com/iielse/SwitchButton
+    implementation 'ch.ielse:switchbutton:1.0.1'
+
+    //阿里oss 图片服务器 https://github.com/aliyun/aliyun-oss-android-sdk?spm=a2c4g.11186623.2.16.50794de39lNERY
+    implementation 'com.aliyun.dpa:oss-android-sdk:2.9.1'
+
+    //微信公众平台 快捷登陆使用
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.1.6'
+
+    implementation 'com.jakewharton.rxbinding:rxbinding:0.3.0'
+
+    //https://github.com/gongwen/MarqueeViewLibrary 跑马灯
+    implementation 'com.gongwen:marqueelibrary:1.1.3'
+}

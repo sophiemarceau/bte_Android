@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <!--资金流向-->
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_height="50dp">
+                <TextView
+                        android:textSize="14sp"
+                        android:text="全网实时资金流向"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_626A75"
+                        android:layout_width="wrap_content"
+                        android:drawableLeft="@drawable/ziji_rectangle"
+                        android:drawablePadding="4dp"
+                        android:layout_height="wrap_content"/>
+
+                <TextView
+                        android:layout_alignParentRight="true"
+                        android:text="单位:￥"
+                        android:textStyle="bold"
+                        android:layout_marginRight="16dp"
+                        android:textColor="@color/color_626A75"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    tools:listitem="@layout/zijin_item_content"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <!--K线图-->
+        <TextView
+                android:text="历史资金流向"
+                android:textColor="@color/color_626A75"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ziji_rectangle"
+                android:gravity="center_vertical"
+                android:drawablePadding="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+        
+        <com.github.mikephil.charting.charts.CandleStickChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"/>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

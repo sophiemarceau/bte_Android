@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">比特易</string>
+    <string name="update_now">立即更新</string>
+    <string name="update_cancel">取消更新</string>
+    <string name="updatting">更新中...</string>
+    <string name="cancel">取消</string>
+    <string name="trade_status">交易状态</string>
+    <string name="bo_gou_income">波段狗，主流币种实时买点/卖点智能提示，短线/合约玩家必备利器。</string>
+    <string name="bo_dog_bi">0人正在做波段</string>
+    <string name="bte_info">区块链市场数据分析工具</string>
+    <string name="mine_head">头像</string>
+    <string name="mine_nick_name">昵称</string>
+    <string name="mine_bind_wx">绑定微信</string>
+    <string name="mine_login_pwd">登录密码</string>
+    <string name="zixuan_normal_type">0</string>
+    <string name="zixuan_last_type">1</string>
+
+
+</resources>

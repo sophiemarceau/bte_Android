@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="82dp"
+    android:layout_marginBottom="@dimen/font_12"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:elevation="3dp"
+    android:background="@drawable/bg_gou_gray"
+>
+
+    <RelativeLayout
+        android:id="@+id/rl_to_dog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gou_white"
+    >
+        <!--<ImageView-->
+        <!--android:layout_width="14dp"-->
+        <!--android:layout_height="14dp"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:src="@mipmap/ji_qi_gou"/>-->
+
+        <TextView
+            android:id="@+id/tv_home_other_gou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="22dp"
+            android:includeFontPadding="false"
+            android:text="机器狗、消息狗"
+            android:textColor="@color/color_626A75"
+            android:textSize="@dimen/font_13"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/font_12"
+            android:src="@mipmap/gengduo"/>
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:src="@mipmap/ding_pan_gou"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:includeFontPadding="false"
+            android:text="盯盘狗"
+            android:textColor="@color/color_626A75"
+            android:textSize="@dimen/font_13"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_home_other_gou"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="12dp"
+            android:includeFontPadding="false"
+            android:paddingLeft="@dimen/margin_16"
+            android:text="更多功能正在开发中… "
+            android:textColor="@color/color_626A75_80"
+            android:textSize="@dimen/font_12"/>
+        <!--<View-->
+            <!--android:id="@+id/v_shadow"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="4dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:alpha="0.5"-->
+            <!--android:background="@drawable/bg_shadow"-->
+        <!--/>-->
+    </RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/color_fafa"
+        android:layout_height="match_parent">
+
+    <View
+            android:background="#ffedf0f2"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"/>
+
+    <TextView
+            android:layout_marginTop="12dp"
+            tools:text="3天前"
+            android:textSize="10sp"
+            android:textColor="@color/color_626A75"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:paddingTop="12dp"
+            android:id="@+id/content"
+            tools:text="数字火币1981年毕业于湖南财经学院（今湖南大学）金融系，1996年获得中国人民大学法学硕士学位。
+肖钢毕业后在中国人民银行工作，曾为原中国人民银行行长吕培俭的秘书，曾担任该行政策研究室主任以及中国外汇交易中心总裁。1996年10月任人行行长助理，并先后兼任计划资金司司长、货币政策司司长、广东省分行行长、国家外汇管理局广东省分局局长。1998年10月任人行副行长。
+2009年获“第一财经金融价值榜”年度金融家殊荣[1]。2011年获“第一财经金融价值榜”年度银行家荣誉[2]。
+2013年春天，被中国政府委任中国证券监督管理委员会主席，结束在中国银行服务8年的工作[3][4]。
+在2015年中国股灾中，大批股民认为以肖钢为首的证监会对股灾的应对不足，造成股市不稳，有股民要求肖钢辞职。2016年证监会推出熔断机制试图降低股灾风险，却造成股市进一步暴跌，令股民对肖钢更加不满，有股民控告证监会和肖钢的渎职和不作为，导致股民遭受重大损失。[5]
+2016年1月18日，路透社引述消息人士消息称肖钢已提出辞去中国证券监督管理委员会主席一职。[6]当夜，证监会否认了这一消息的真实性，称与事实不符，其后路透社的新浪微博帐户被销号。[7]
+2016年2月19日，华尔街日报引述知情中国官员透露称，在几天内肖钢将离任，会由中国农业银行董事长、前中国央行副行长刘士余将接替肖钢担任证监会主席。[8]同月20日，新华社证实了肖钢被免职的消息。[9]2018年1月，当选第十三届全国政协委员[10]。"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:textColor="@color/color_626A75"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <View
+            android:layout_marginTop="12dp"
+            android:background="#ffe6ebf0"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+        <RelativeLayout
+                android:id="@+id/share_container"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:id="@+id/tempShare"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/ic_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/share"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tempShare"
+                    android:layout_width="wrap_content"
+                    android:textSize="12sp"
+                    android:paddingLeft="4dp"
+                    android:text="分享"
+                    android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/discussContainer"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:id="@+id/tempDicuss"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/ic_disscuss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/discuss"
+                    android:layout_toRightOf="@+id/tempDicuss"
+                    android:layout_centerVertical="true"
+                    android:text="评论"
+                    android:paddingLeft="4dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_626A75"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/newDiscussCount"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="2dp"
+                    tools:text="+2"
+                    android:textSize="10sp"
+                    android:textColor="@color/color_FF4040"
+                    android:layout_toRightOf="@+id/discuss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/thumbContainer"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+               <ImageView
+                    android:id="@+id/tempThumb"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/selctor_thumb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/thumb"
+                    android:layout_toRightOf="@+id/tempThumb"
+                    android:layout_centerVertical="true"
+                    android:text="评论"
+                    android:paddingLeft="4dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_626A75"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            <TextView
+                    android:id="@+id/newThumbCount"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="2dp"
+                    tools:text="+2"
+                    android:textSize="10sp"
+                    android:textColor="@color/color_FF4040"
+                    android:layout_toRightOf="@+id/thumb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:layout_width="270dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/logout_dialog">
+
+        <LinearLayout
+            android:id="@+id/dialog_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/color_626A75_60"
+                android:textSize="@dimen/font_16"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_E6EBF0"/>
+
+            <TextView
+                android:id="@+id/dialog_tv_sure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="确认修改"
+                android:textColor="#308CDD"
+                android:textSize="@dimen/font_16"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/dialog_linear_layout"
+            android:background="@color/color_E6EBF0"/>
+
+        <TextView
+            android:id="@+id/dialog_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="45dp"
+            android:gravity="center"
+            android:text="昵称："
+            android:textColor="@color/color_626A75_60"
+            android:textSize="@dimen/font_16"/>
+
+        <EditText
+            android:id="@+id/et_nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/dialog_tv_title"
+            android:gravity="center_vertical"
+            android:hint="请您输入昵称"
+            android:includeFontPadding="false"
+            android:maxLength="10"
+            android:padding="5dp"
+            android:textColor="@color/color_626A75"
+            android:textColorHint="@color/color_626A75_60"
+            android:textCursorDrawable="@drawable/edittext_cursor_bg"
+            android:textSize="@dimen/font_16"
+            android:theme="@style/MyEditText"/>
+        <View
+            android:id="@+id/top_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/dialog_tv_title"
+            android:visibility="gone"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/color_E6EBF0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/et_nick_name"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:text="不超过十个字符"
+            android:textColor="@color/color_626A75_40"
+            android:textSize="@dimen/font_12"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

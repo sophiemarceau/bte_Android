@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/person_backgroud"
+              android:orientation="vertical">
+    <TextView
+        android:id="@+id/bind_wx_auto_get"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="绑定微信，自动获取"
+        android:textColor="@color/color_1389EF"
+        android:textSize="@dimen/font_16"
+        android:visibility="gone"
+        tools:visibility="visible"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_line"
+    />
+
+    <TextView
+        android:id="@+id/choose_from_album"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="手机相册"
+        android:textColor="@color/color_626A75"
+        android:textSize="@dimen/font_16"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_line"
+    />
+
+    <TextView
+        android:id="@+id/choose_from_camera"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="拍摄"
+        android:textColor="@color/color_626A75"
+        android:textSize="@dimen/font_16"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/gray_line"
+    />
+
+
+    <TextView
+        android:id="@+id/choose_from_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/color_626A75"
+        android:textSize="@dimen/font_16"
+        android:textStyle="bold"
+    />
+
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="42dp">
+    <View
+            android:background="@color/color_E6EBF0"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+        <TextView
+                android:text="时间"
+                android:textColor="@color/color_60_866"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+        <TextView
+                android:text="交易所"
+                android:textColor="@color/color_60_866"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        <TextView
+                android:text="类型"
+                android:textColor="@color/color_60_866"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textSize="12sp"
+                android:layout_height="match_parent"/>
+        <TextView
+                android:text="价格"
+                android:textColor="@color/color_60_866"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        <TextView
+                android:text="金额"
+                android:textColor="@color/color_60_866"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="12sp"
+            android:background="@color/color_E6EBF0"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+</LinearLayout>

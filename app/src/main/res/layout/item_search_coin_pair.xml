@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_coin_pair"
+    android:layout_width="wrap_content"
+    android:layout_height="58dp"
+    android:background="@color/base_color"
+>
+
+    <TextView
+        android:id="@+id/tv_coin_pair_base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/color_626A75"
+        android:textSize="@dimen/font_14"
+        tools:text="BTC"/>
+    <TextView
+        android:id="@+id/tv_coin_pair_quto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_coin_pair_base"
+        android:layout_toRightOf="@+id/tv_coin_pair_base"
+        android:textColor="@color/color_626A75_60"
+        android:textSize="@dimen/font_12"
+        tools:text="/USDT"/>
+
+    <TextView
+        android:id="@+id/tv_coin_pair_exchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_coin_pair_base"
+        android:layout_below="@+id/tv_coin_pair_base"
+        android:textColor="@color/color_626A75_60"
+        android:textSize="@dimen/font_12"
+        tools:text="Okex"/>
+    <!--<RadioButton-->
+    <!--android:id="@+id/rb_coin_pair"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:button="@drawable/selector_checkbox"-->
+    <!--android:paddingLeft="5dp"-->
+    <!--/>-->
+    <ImageView
+        android:id="@+id/rb_coin_pair"
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/selector_xuanfu"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_626A75_10"/>
+
+</RelativeLayout>

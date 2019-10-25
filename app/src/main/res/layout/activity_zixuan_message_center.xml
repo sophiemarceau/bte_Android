@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:background="@color/color_fafa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!--<include-->
+        <!--layout="@layout/head_layout"/>-->
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+        <ImageView
+                android:id="@+id/img_fan_hui"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/margin_16"
+                android:scaleType="center"
+                android:src="@mipmap/back"/>
+
+        <TextView
+                android:id="@+id/tran_title_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                tools:text="详情"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/font_18"/>
+
+
+        <TextView
+                android:id="@+id/all_read"
+                android:layout_alignParentRight="true"
+                android:text="全部已读"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:paddingRight="16dp"
+                android:textColor="@color/color_626A75"
+        />
+        <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#E6EBF0"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_zixuan"
+            android:layout_marginLeft="65dp"
+            android:padding="1dp"
+            android:layout_marginRight="65dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+        <RelativeLayout
+                android:id="@+id/item_left"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_zixuan_item"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:id="@+id/item_left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@drawable/zixuan_item_tv_selctor"
+                    android:text="我发布的"
+                    android:layout_centerInParent="true"
+            />
+
+            <TextView
+                    android:id="@+id/newReleaseCount"
+                    android:layout_toRightOf="@+id/item_left_text"
+                    android:textSize="9sp"
+                    tools:text="+9"
+                    android:padding="2dp"
+                    android:background="@drawable/bg_shape_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/item_right"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_zixuan_item"
+                android:layout_height="match_parent">
+
+
+            <TextView
+                    android:id="@+id/item_right_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textColor="@drawable/zixuan_item_tv_selctor"
+                    android:text="我评论的"
+                    android:layout_centerInParent="true"
+            />
+
+            <TextView
+                    android:id="@+id/newDisussCount"
+                    android:layout_toRightOf="@+id/item_right_text"
+                    android:textSize="9sp"
+                    tools:text="+9"
+                    android:padding="2dp"
+                    android:background="@drawable/bg_shape_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+            android:layout_marginTop="5dp"
+            android:background="#ffe6ebf0"
+            android:layout_width="match_parent" android:layout_height="0.5dp"/>
+
+    <com.btetop.widget.IsCanScrollViewPager
+            android:id="@+id/fragment_vieapager"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+        />
+</LinearLayout>

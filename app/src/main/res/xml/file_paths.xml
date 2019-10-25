@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <path>
+        <external-path  name="update" path =""/>
+    </path>
+    <paths xmlns:android="http://schemas.android.com/apk/res/android">
+        <files-path path="Android/data/com.btetop/files/Pictures/OriPicture/" name="images" />
+        <external-path path="Android/data/com.btetop/files/Pictures/OriPicture/" name="images" />
+        <external-files-path path="files/Pictures/OriPicture" name="images"/>
+        <root-path path="" name="images"/>
+    </paths>
+</resources>

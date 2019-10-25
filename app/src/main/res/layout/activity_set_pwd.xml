@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+>
+    <include
+        android:id="@+id/head"
+        layout="@layout/head_layout"/>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray_line"
+        android:layout_below="@+id/head"
+
+    />
+    <RelativeLayout
+        android:id="@+id/ll_set_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/view"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+    >
+
+        <EditText
+            android:id="@+id/register_phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_toLeftOf="@+id/tv_register_yanZhengMa"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:includeFontPadding="false"
+            android:inputType="number"
+            android:maxLength="6"
+            android:padding="5dp"
+            android:textColor="@color/color_626A75"
+            android:textColorHint="@color/color_626A75_50"
+            android:textCursorDrawable="@drawable/edittext_cursor_bg"
+            android:textSize="@dimen/font_14"/>
+
+
+        <TextView
+            android:id="@+id/tv_register_yanZhengMa"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_button_blue"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:text="获取验证码"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_12"/>
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/ll_set_pwd"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/gray_line"
+    />
+
+    <TextView
+        android:id="@+id/tv_current_num"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical"
+        tools:text="当前绑定手机号：194****4738"
+        android:textColor="@color/person_title"
+        android:textSize="14sp"
+    />
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/tv_current_num"
+        android:background="@color/gray_line"
+
+    />
+
+    <EditText
+        android:id="@+id/tv_pwd1"
+        android:layout_below="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:hint="设置登录密码"
+        android:includeFontPadding="false"
+        android:maxLength="11"
+        android:padding="5dp"
+        android:textColor="@color/color_626A75"
+        android:textColorHint="@color/color_626A75_50"
+        android:textCursorDrawable="@drawable/edittext_cursor_bg"
+        android:textSize="@dimen/font_16"
+        android:theme="@style/MyEditText"/>
+
+    <EditText
+        android:id="@+id/tv_pwd2"
+        android:layout_below="@+id/tv_pwd1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:hint="确认登录密码"
+        android:includeFontPadding="false"
+        android:maxLength="11"
+        android:padding="5dp"
+        android:textColor="@color/color_626A75"
+        android:textColorHint="@color/color_626A75_50"
+        android:textCursorDrawable="@drawable/edittext_cursor_bg"
+        android:textSize="@dimen/font_16"
+        android:theme="@style/MyEditText"/>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/tv_pwd2"
+        android:layout_marginTop="28dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_button_blue"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_18"
+        android:textStyle="bold"
+    />
+</RelativeLayout>

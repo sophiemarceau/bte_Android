@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/spinner_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MACD"
+        android:layout_centerInParent="true"
+        android:background="#ffffff"
+        android:textColor="@color/color_626A75"
+        android:textSize="12sp" />
+    <ImageView
+        android:id="@+id/spinner_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner_item_text"
+        android:layout_toRightOf="@+id/spinner_item_text"
+        android:background="@mipmap/more_pic"
+        />
+</RelativeLayout>

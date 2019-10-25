@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/transparent">
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="205dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/logout_dialog">
+
+        <LinearLayout
+            android:id="@+id/dialog_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_tv_sure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="添加"
+                android:textColor="#308CDD"
+                android:textSize="@dimen/font_16"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_E6EBF0"/>
+
+            <TextView
+                android:id="@+id/dialog_tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="跳过"
+                android:textColor="#308CDD"
+                android:textSize="@dimen/font_16"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/dialog_linear_layout"
+            android:background="@color/color_E6EBF0"/>
+
+        <TextView
+            android:id="@+id/dialog_tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="建议输入持仓成本价，收益自动计算"
+            android:textColor="@color/color_626A75"
+            android:textSize="@dimen/font_14"/>
+
+        <TextView
+            android:id="@+id/dialog_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_tv_title2"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="持仓成本价："
+            android:textColor="@color/color_626A75_60"
+            android:textSize="@dimen/font_14"/>
+
+        <EditText
+            android:id="@+id/et_nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_below="@+id/dialog_tv_title2"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="35dp"
+            android:layout_toLeftOf="@+id/tv_usdt"
+            android:layout_toRightOf="@+id/dialog_tv_title"
+            android:gravity="center_vertical"
+            android:hint="选填"
+            android:includeFontPadding="false"
+            android:maxLength="10"
+            android:padding="5dp"
+            android:inputType="numberDecimal"
+            android:textColor="@color/color_626A75"
+            android:textColorHint="@color/color_626A75_60"
+            android:textCursorDrawable="@drawable/edittext_cursor_bg"
+            android:textSize="@dimen/font_14"
+            android:theme="@style/MyEditText"/>
+
+        <TextView
+                android:id="@+id/tv_usdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/dialog_tv_title2"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="USDT"
+                android:textColor="@color/color_626A75"
+                android:textSize="@dimen/font_16"/>
+        <View
+            android:id="@+id/top_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/dialog_tv_title"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/color_E6EBF0"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tv_cost_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_nick_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:drawableLeft="@mipmap/notice_home"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="请输入持仓成本"
+            android:textColor="#FF6B28"
+            android:textSize="@dimen/font_12"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_grid_down"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+>
+
+    <com.btetop.widget.MyGridView
+        android:id="@+id/grid"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="205dp"
+        android:layout_weight="1"
+        android:background="@color/color_308CDD"
+        android:numColumns="1"
+    />
+
+</RelativeLayout>
+

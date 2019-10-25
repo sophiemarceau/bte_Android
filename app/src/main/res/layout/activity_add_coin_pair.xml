@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include
+            layout="@layout/head_layout"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+
+        <TextView
+            android:id="@+id/tv_search_coin_pair"
+                android:text=" 请输入币对信息"
+                android:background="@drawable/bg_search"
+                android:drawableLeft="@mipmap/ic_search"
+                android:paddingRight="6dp"
+                android:paddingLeft="6dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/color_626A75_60"
+                android:layout_marginRight="16dp"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"/>
+
+    </RelativeLayout>
+    <android.support.design.widget.TabLayout
+            android:background="@color/white"
+            android:layout_gravity="bottom"
+            android:id="@+id/tab_main"
+            app:tabIndicatorColor="@color/color_308CDD"
+            app:tabMode="fixed"
+            app:tabTextAppearance="@style/TabLayoutTextSizeStyle"
+            app:tabSelectedTextColor="@color/color_308CDD"
+            app:tabTextColor="@color/color_626A75"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"/>
+
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/vp_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    >
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

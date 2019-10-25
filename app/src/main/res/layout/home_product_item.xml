@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/home_ce_lue_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:background="@drawable/rectangle_home_ce_lue"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:paddingLeft="@dimen/margin_16"
+            android:paddingRight="@dimen/margin_16">
+
+            <ImageView
+                android:id="@+id/home_fragment_ce_lue_img"
+                android:layout_width="32dp"
+                android:layout_height="36dp"
+                android:src="@mipmap/ic_rinei" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:layout_toLeftOf="@+id/home_fragment_risk"
+                android:layout_toRightOf="@+id/home_fragment_ce_lue_img"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/home_fragment_ce_lue_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="策略跟随"
+                    android:textColor="@color/color_626A75"
+                    android:textSize="@dimen/font_16" />
+
+                <TextView
+                    android:id="@+id/home_fragment_ce_lue_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:includeFontPadding="false"
+                    android:text="策略跟随"
+                    android:textColor="@color/color_868C95"
+                    android:textSize="@dimen/font_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home_fragment_risk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/home_fragment_risk_img"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/home_risk_green_bg"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="9"
+                    android:textSize="@dimen/font_20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="风险"
+                    android:textColor="@color/color_626A75"
+                    android:textSize="@dimen/font_12" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:background="@color/color_E6EBF0" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="累计收益率"
+                android:textColor="@color/color_626A75"
+                android:textSize="@dimen/font_12" />
+
+            <TextView
+                android:id="@+id/home_fragment_yield"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="0%"
+                android:textSize="@dimen/font_20" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

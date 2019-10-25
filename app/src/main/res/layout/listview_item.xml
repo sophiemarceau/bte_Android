@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<View
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@color/color_F0F0F0"
+        android:layout_height="1px" tools:showIn="@layout/shendu_left_view"/>

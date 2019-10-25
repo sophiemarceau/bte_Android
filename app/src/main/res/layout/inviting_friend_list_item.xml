@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:paddingBottom="@dimen/margin_20">
+
+    <TextView
+        android:id="@+id/friends_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="158****8888"
+        android:textColor="@color/color_626A75"
+        android:textSize="@dimen/font_14" />
+
+    <TextView
+        android:id="@+id/friends_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:includeFontPadding="false"
+        android:text="2018/01/20  12:20:45"
+        android:textColor="@color/color_626A75"
+        android:textSize="@dimen/font_14" />
+
+
+</RelativeLayout>

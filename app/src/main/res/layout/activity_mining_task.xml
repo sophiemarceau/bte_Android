@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/base_color"
+
+>
+
+    <include
+        android:id="@+id/mining_head"
+        layout="@layout/head_layout_complete"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/color_626A75_10"
+    />
+    <RelativeLayout
+        android:id="@+id/ll_mining_task_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16"
+    >
+
+        <ImageView
+            android:id="@+id/iv_mining_task_wechat"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/iv_mining_task_wechat"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_mining_task_wechat"
+            android:includeFontPadding="false"
+            android:text="绑定微信   +5"
+            android:textColor="@color/color_626A75"
+            android:textSize="@dimen/font_14"/>
+
+        <TextView
+            android:id="@+id/tv_mining_task_wechat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_16"
+            tools:text="去完成"
+            android:textColor="@color/color_308CDD"
+            android:textSize="@dimen/font_14"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/color_626A75_10"
+    />
+    <RelativeLayout
+        android:id="@+id/ll_mining_task_gzh"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16"
+    >
+
+        <ImageView
+            android:id="@+id/iv_mining_task_gzh"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/iv_mining_task_gzh"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_mining_task_gzh"
+            android:includeFontPadding="false"
+            android:text="关注公众号   +5"
+            android:textColor="@color/color_626A75"
+            android:textSize="@dimen/font_14"/>
+
+        <TextView
+            android:id="@+id/tv_mining_task_gzh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_16"
+            tools:text="已完成"
+            android:textColor="@color/color_626A75_50"
+            android:textSize="@dimen/font_14"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/color_626A75_10"
+    />
+
+    <RelativeLayout
+        android:id="@+id/ll_mining_task_join_group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16"
+    >
+
+        <ImageView
+            android:id="@+id/iv_mining_task_join_group"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/iv_mining_task_join_group"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_mining_task_join_group"
+            android:includeFontPadding="false"
+            android:text="加入官方群   +5"
+            android:textColor="@color/color_626A75"
+            android:textSize="@dimen/font_14"/>
+
+        <TextView
+            android:id="@+id/tv_mining_task_join_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_16"
+            tools:text="去完成"
+            android:textColor="@color/color_308CDD"
+            android:textSize="@dimen/font_14"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/color_626A75_10"
+    />
+
+    <RelativeLayout
+        android:id="@+id/ll_mining_task_user_report"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16"
+    >
+
+        <ImageView
+            android:id="@+id/iv_mining_task_user_report"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/iv_mining_task_user_report"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_mining_task_user_report"
+            android:includeFontPadding="false"
+            android:text="用户调研   +5"
+            android:textColor="@color/color_626A75"
+            android:textSize="@dimen/font_14"/>
+
+        <TextView
+            android:id="@+id/tv_mining_task_user_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_16"
+            tools:text="去完成"
+            android:textColor="@color/color_308CDD"
+            android:textSize="@dimen/font_14"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

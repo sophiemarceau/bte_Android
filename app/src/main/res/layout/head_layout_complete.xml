@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color_white">
+
+    <ImageView
+            android:id="@+id/img_fan_hui"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/margin_16"
+            android:scaleType="center"
+            android:src="@mipmap/back"/>
+
+    <TextView
+            android:id="@+id/tran_title_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/font_18"/>
+
+
+    <TextView
+            android:id="@+id/right_tv"
+            android:text="完成"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_626A75"
+            android:layout_width="60dp"
+            android:layout_height="24dp"/>
+    <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#E6EBF0"/>
+</RelativeLayout>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+    <!--上部分 头部-->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_head">
+
+        <RelativeLayout
+                android:id="@+id/rl_time"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+        >
+            <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2dp"
+                    android:text="1小时"
+                    android:textColor="@color/color_626A75"
+                    android:textSize="12sp"
+            />
+            <ImageView
+                    android:id="@+id/iv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_time"
+                    android:layout_marginBottom="2dp"
+                    android:layout_toRightOf="@+id/tv_time"
+                    android:background="@mipmap/more_pic"
+            />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rl_factor"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+        >
+            <TextView
+                    android:id="@+id/tv_factor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2dp"
+                    android:text="1小时"
+                    android:textColor="@color/color_626A75"
+                    android:textSize="12sp"
+            />
+            <ImageView
+                    android:id="@+id/iv_factor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_factor"
+                    android:layout_marginBottom="2dp"
+                    android:layout_toRightOf="@+id/tv_factor"
+                    android:background="@mipmap/more_pic"
+            />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:id="@+id/rl_curve"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+        >
+            <TextView
+                    android:id="@+id/tv_curve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2dp"
+                    android:text="1小时"
+                    android:textColor="@color/color_626A75"
+                    android:textSize="12sp"
+            />
+            <ImageView
+                    android:id="@+id/iv_curve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_curve"
+                    android:layout_marginBottom="2dp"
+                    android:layout_toRightOf="@+id/tv_curve"
+                    android:background="@mipmap/more_pic"
+            />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rl_major"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+        >
+            <TextView
+                    android:id="@+id/tv_major"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2dp"
+                    android:text="1小时"
+                    android:textColor="@color/color_626A75"
+                    android:textSize="12sp"
+            />
+            <ImageView
+                    android:id="@+id/iv_major"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_major"
+                    android:layout_marginBottom="2dp"
+                    android:layout_toRightOf="@+id/tv_major"
+                    android:background="@mipmap/more_pic"
+            />
+        </RelativeLayout>
+
+
+
+        <!--<Spinner-->
+        <!--android:id="@+id/spinner_setting"-->
+        <!--android:layout_toRightOf="@+id/spinner_factor"-->
+        <!--android:spinnerMode="dropdown"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:background="#FFFFFF"-->
+        <!--android:layout_marginLeft="@dimen/margin_10"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:gravity="center"></Spinner>-->
+        <RelativeLayout
+                android:id="@+id/rl_setting"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+        >
+            <TextView
+                    android:id="@+id/tv_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2dp"
+                    android:text="设置"
+                    android:textColor="@color/color_626A75"
+                    android:textSize="12sp"
+            />
+            <ImageView
+                    android:id="@+id/iv_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_setting"
+                    android:layout_marginBottom="2dp"
+                    android:layout_toRightOf="@+id/tv_setting"
+                    android:background="@mipmap/more_pic"
+            />
+        </RelativeLayout>
+
+        <TextView
+                android:id="@+id/dingpan"
+                android:textColor="@color/color_308CDD"
+                android:text="盯盘"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textSize="12sp"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_head">
+
+        <include
+                android:id="@+id/kline_header_layout"
+                layout="@layout/kline_header_layout"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+        />
+
+        <com.guoziwei.klinelib.chart.KLineView
+                android:id="@+id/kline"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_below="@+id/kline_header_layout"
+        />
+
+
+        <!--遮罩层的高度 timeView+header-->
+        <RelativeLayout
+                android:id="@+id/bg_heyue_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_heyue"
+                android:clickable="true"
+        >
+
+            <TextView
+                    android:id="@+id/tv_btn_heyue_above"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_btn_heyue"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:textColor="@color/color_626A75"
+                    android:text="深度挖掘合约交易数据，技术派合约玩家的必备工具。"/>
+
+            <TextView
+                    android:id="@+id/tv_btn_heyue"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginRight="90dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bg_button_blue"
+                    android:gravity="center"
+                    android:text="开启合约狗"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_18"
+                    android:textStyle="bold"
+            />
+
+            <TextView
+                    android:id="@+id/hy_btn_below"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_btn_heyue"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/color_308CDD"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:text="关于合约狗"/>
+
+            <TextView
+                    android:id="@+id/hy_btn_below2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    tools:text="使用合约狗将每天消耗5积分"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+>
+
+    <TextView
+        android:id="@+id/iv_item_market_coin_index_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/color_626A75"
+        android:textSize="@dimen/font_16"
+        android:textStyle="bold"
+        tools:text="ETC"/>
+
+
+    <TextView
+        android:id="@+id/iv_item_market_coin_index_deal_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_item_market_coin_index_name"
+        android:layout_marginBottom="2dp"
+        android:layout_toRightOf="@+id/iv_item_market_coin_index_name"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/color_626A75"
+        android:textSize="@dimen/font_10"
+        tools:text="/1.45亿元"/>
+
+    <TextView
+        android:id="@+id/iv_item_market_coin_24_change"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_button_red"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16"
+        tools:text="-23.39%"/>
+
+    <TextView
+        android:id="@+id/iv_item_market_coin_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="43dp"
+        android:layout_toLeftOf="@+id/iv_item_market_coin_24_change"
+        android:textColor="@color/color_626A75"
+        android:textSize="@dimen/font_16"
+        android:textStyle="bold"
+        tools:text="¥6,350.24"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_626A75_10"/>
+
+
+</RelativeLayout>
+
+
+

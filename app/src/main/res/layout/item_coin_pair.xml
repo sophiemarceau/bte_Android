@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item_coin_info"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/color_308CDD"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_coin_pair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="16dp"
+    />
+    <TextView
+        android:id="@+id/tv_coin_pair_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="16dp"
+    />
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/limit_color"
+    />
+</RelativeLayout>

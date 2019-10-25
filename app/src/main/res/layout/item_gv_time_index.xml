@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dip">
+    <TextView
+            android:id="@+id/item_text"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="1分钟"
+            android:singleLine="true"
+            android:textColor="@color/color_white">
+    </TextView>
+</RelativeLayout>

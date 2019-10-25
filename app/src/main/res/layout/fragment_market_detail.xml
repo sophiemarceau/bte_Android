@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <!--<include-->
+    <!--layout="@layout/head_layout"/>-->
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/color_308CDD"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/color_308CDD"
+        app:tabTextAppearance="@style/TabLayoutTextSizeStyle"
+        app:tabTextColor="@color/color_626A75"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_zixuan"
+        android:layout_marginLeft="65dp"
+        android:padding="2dp"
+        android:layout_marginRight="65dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:id="@+id/item_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@drawable/zixuan_item_tv_selctor"
+            android:background="@drawable/selector_zixuan_item"
+            android:text="我的自选"
+            android:gravity="center"
+        />
+
+        <TextView
+            android:id="@+id/item_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@drawable/zixuan_item_tv_selctor"
+            android:background="@drawable/selector_zixuan_item"
+            android:text="我的资产"
+            android:gravity="center"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>

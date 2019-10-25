@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_dadan"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:id="@+id/tvTime1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_60_866"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    tools:text="17:38"/>
+
+            <TextView
+                    android:id="@+id/tvTime2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_60_866"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    tools:text="12-01"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDirectionDesc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/color_FF4040"
+            android:textSize="12sp"
+            tools:text="空单"/>
+
+        <TextView
+            android:id="@+id/tvStatusDesc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/color_FF4040"
+            android:textSize="12sp"
+            tools:text="挂单"/>
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/color_all_866"
+            tools:text="4463.38"/>
+
+
+        <TextView
+            android:id="@+id/tvCount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#525866"
+            tools:text="11111个"/>
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/listview_item"/>
+</RelativeLayout>

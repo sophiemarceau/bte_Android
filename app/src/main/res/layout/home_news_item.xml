@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/base_color"
+                android:orientation="horizontal"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_home_news_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_16">
+
+            <TextView
+                android:id="@+id/news_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/color_626A75"
+                android:textSize="@dimen/font_14"/>
+
+            <TextView
+                android:id="@+id/news_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_12"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color_868C95"
+                android:textSize="@dimen/font_12"/>
+
+            <com.btetop.widget.ExpandableTextView
+                android:id="@+id/news_expand_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:orientation="vertical"
+                expandableTextView:clickListenerType="all"
+                expandableTextView:collapseDrawable="@mipmap/home_retract"
+                expandableTextView:expandDrawable="@mipmap/home_more"
+                expandableTextView:maxCollapsedLines="3">
+
+                <TextView
+                    android:id="@id/expandable_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:ellipsize="end"
+                    android:lineSpacingMultiplier="1.5"
+                    android:textColor="@color/color_626A75"
+                    android:textSize="@dimen/font_14"/>
+
+                <RelativeLayout
+                    android:id="@id/expand_footer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@id/expand_collapse"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/transparent"
+                        android:clickable="false"/>
+                </RelativeLayout>
+
+            </com.btetop.widget.ExpandableTextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

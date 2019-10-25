@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="42dp">
+
+    <TextView
+            android:layout_weight="1"
+            android:text="时间"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/color_60_866"
+            android:layout_width="0dp"
+            android:layout_height="42dp"/>
+
+    <TextView
+            android:layout_weight="1"
+            android:text="方向"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/color_60_866"
+            android:layout_width="0dp"
+            android:layout_height="42dp"/>
+
+    <TextView
+            android:layout_weight="1"
+            android:text="类型"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/color_60_866"
+            android:layout_width="0dp"
+            android:layout_height="42dp"/>
+
+    <TextView
+            android:layout_weight="1"
+            android:text="价格"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/color_60_866"
+            android:layout_width="0dp"
+            android:layout_height="42dp"/>
+
+    <TextView
+            android:layout_weight="1"
+            android:text="数量(BTC)"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/color_60_866"
+            android:layout_width="0dp"
+            android:layout_height="42dp"/>
+
+
+</LinearLayout>

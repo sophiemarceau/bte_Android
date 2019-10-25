@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:windowSoftInputMode="adjustPan"
+    tools:context=".activity.HeyueActivity"
+>
+    <include layout="@layout/fragment_header"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/cl_contain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            app:elevation="0dp"
+        >
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_tool_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll"
+            >
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <FrameLayout
+                        android:id="@+id/fragment_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </android.support.v4.widget.NestedScrollView>
+
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <android.support.design.widget.TabLayout
+                android:background="@color/white"
+                android:layout_gravity="bottom"
+                android:id="@+id/tab_main"
+                app:tabIndicatorColor="@color/color_308CDD"
+                app:tabMode="fixed"
+                app:tabTextAppearance="@style/TabLayoutTextSizeStyle"
+                app:tabSelectedTextColor="@color/color_308CDD"
+                app:tabTextColor="@color/color_626A75"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"/>
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            >
+            </android.support.v4.view.ViewPager>
+            <ImageView
+                android:id="@+id/iv_go_top"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="50dp"
+                android:layout_marginRight="15dp"
+                android:scaleType="center"
+                android:src="@mipmap/chat_to_top"/>
+        </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

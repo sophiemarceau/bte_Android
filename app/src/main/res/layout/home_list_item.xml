@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_home_recycler_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/base_color"
+>
+
+    <ImageView
+        android:id="@+id/home_list_icon"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginBottom="14dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/home_list_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_ping"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/home_list_icon"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textColor="@color/color_626A75"
+        android:textSize="@dimen/font_12"
+        tools:text="BTC"/>
+    <ImageView
+        android:id="@+id/iv_ping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/home_list_symbol"
+        android:src="@mipmap/ping"
+    />
+
+    <TextView
+        android:id="@+id/home_list_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_ping"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:gravity="center"
+        android:textColor="@color/color_626A75"
+        android:textSize="@dimen/font_10"
+        tools:text="6.54%"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="@dimen/font_14"
+        android:layout_alignTop="@+id/home_list_change"
+        android:layout_alignParentRight="true"
+        android:background="#D8E0E9"
+        android:visibility="gone"
+        tools:visibility="visible"
+    />
+
+    <TextView
+        android:id="@+id/home_list_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/home_list_symbol"
+        android:layout_below="@+id/home_list_symbol"
+        android:layout_marginTop="3dp"
+        android:maxLength="8"
+        android:textColor="@color/color_626A75"
+        android:textSize="@dimen/font_18"
+        android:textStyle="bold"
+        tools:text="55555555555"
+    />
+
+</RelativeLayout>

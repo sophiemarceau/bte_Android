@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EDFOF2"
+    android:orientation="vertical"
+    tools:context="com.btetop.activity.FeedBackActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/base_color">
+
+        <ImageView
+            android:id="@+id/feed_fan_hui"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="center"
+            android:src="@mipmap/login_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:includeFontPadding="false"
+            android:text="意见反馈"
+            android:textColor="@color/color_626A75"
+            android:textSize="@dimen/font_18" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        android:includeFontPadding="false"
+        android:text="反馈内容"
+        android:textColor="@color/color_626A75"
+        android:textSize="@dimen/font_14" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_color">
+
+        <EditText
+            android:id="@+id/feed_content_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="5"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:background="@null"
+            android:hint="请输入不少于5个字的描述"
+            android:gravity="start"
+            android:textColor="@color/color_626A75"
+            android:textColorHint="@color/color_626A75_40"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/feed_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feed_content_ed"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_10"
+            android:includeFontPadding="false"
+            android:text="0/240"
+            android:textColor="@color/color_626A75_60"
+            android:textSize="@dimen/font_14" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/feed_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_40"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="提交意见"
+        android:background="@drawable/feed_button_gray_bg"
+        android:textColor="@color/color_93A0B5"
+        android:textSize="@dimen/font_16" />
+
+</LinearLayout>

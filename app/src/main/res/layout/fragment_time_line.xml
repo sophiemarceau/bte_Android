@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+    <!--上部分 头部-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:id="@+id/ll_head">
+        <RelativeLayout
+            android:id="@+id/rl_time"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+        >
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="2dp"
+                android:text="设置"
+                android:textColor="@color/color_626A75"
+                android:textSize="12sp"
+            />
+            <ImageView
+                android:id="@+id/iv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_time"
+                android:layout_marginBottom="2dp"
+                android:layout_toRightOf="@+id/tv_time"
+                android:background="@mipmap/more_pic"
+            />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rl_factor"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+        >
+            <TextView
+                    android:id="@+id/tv_factor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2dp"
+                    android:text="设置"
+                    android:textColor="@color/color_626A75"
+                    android:textSize="12sp"
+            />
+            <ImageView
+                    android:id="@+id/iv_factor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_factor"
+                    android:layout_marginBottom="2dp"
+                    android:layout_toRightOf="@+id/tv_factor"
+                    android:background="@mipmap/more_pic"
+            />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rl_curve"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+        >
+            <TextView
+                    android:id="@+id/tv_curve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2dp"
+                    android:text="设置"
+                    android:textColor="@color/color_626A75"
+                    android:textSize="12sp"
+            />
+            <ImageView
+                    android:id="@+id/iv_curve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_curve"
+                    android:layout_marginBottom="2dp"
+                    android:layout_toRightOf="@+id/tv_curve"
+                    android:background="@mipmap/more_pic"
+            />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rl_real_time"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+        >
+            <TextView
+                    android:id="@+id/tv_real_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2dp"
+                    android:text="成交分布"
+                    android:textColor="@color/color_626A75"
+                    android:textSize="12sp"
+            />
+            <ImageView
+                    android:id="@+id/iv_real_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_real_time"
+                    android:layout_marginBottom="2dp"
+                    android:layout_toRightOf="@+id/tv_real_time"
+                    android:background="@mipmap/more_pic"
+            />
+        </RelativeLayout>
+
+
+        <TextView
+                android:id="@+id/option"
+                android:text="+自选"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:textColor="@color/color_626A75"
+                android:layout_height="match_parent"/>
+
+        <TextView
+                android:id="@+id/dingpan"
+                android:text="盯盘"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:textColor="@color/color_308CDD"
+                android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/kline_header_layout"
+        layout="@layout/kline_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_marginTop="22dp"/>
+
+    <com.guoziwei.klinelib.chart.KLineView
+        android:id="@+id/kline"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/kline_header_layout"
+        android:layout_toLeftOf="@+id/rg_index"
+    />
+
+</RelativeLayout>

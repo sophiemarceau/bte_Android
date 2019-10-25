@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+            android:id="@+id/shendu_bottom_title"
+            tools:text="*超级深度为huobi、binance、okex、bitfinex的btc/usdt交易对的深度合并"
+            android:textSize="10sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_626A75_60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/base_color"
+                android:orientation="vertical"
+                tools:context="com.btetop.activity.AboutUsActivity">
+
+    <RelativeLayout
+        android:id="@+id/about_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/transparent">
+
+        <ImageView
+            android:id="@+id/about_fan_hui"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="center"
+            android:src="@mipmap/login_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:includeFontPadding="false"
+            android:text="加入官方群"
+            android:textColor="@color/color_626A75"
+            android:textSize="@dimen/font_18"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/about_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/about_title"
+        android:background="@color/color_E6EBF0"/>
+
+    <ImageView
+        android:id="@+id/about_logo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_above="@+id/about_version"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:src="@mipmap/bte_qr_group"/>
+
+    <TextView
+        android:id="@+id/about_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="微信扫一扫添加好友"
+        android:textColor="@color/color_626A75"
+        android:textSize="@dimen/font_14"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_version"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:text=" : "
+        android:textColor="@color/color_626A75"
+        android:textSize="@dimen/font_16"/>
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_version"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@+id/tv2"
+        android:text="微信号"
+        android:textColor="@color/color_626A75"
+        android:textSize="@dimen/font_16"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_version"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/tv2"
+        android:text="bte-top"
+        android:textColor="@color/color_308CDD"
+        android:textSize="@dimen/font_16"/>
+
+    <TextView
+        android:id="@+id/tv_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp"
+        android:text="复制"
+        android:textColor="@color/color_308CDD"
+        android:textSize="@dimen/font_16"/>
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!--矩形-->
+    <LinearLayout
+            android:id="@+id/bg_rectangle"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/bg_rectangle"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"/>
+
+    <!--圆形-->
+    <LinearLayout
+            android:id="@+id/bg_half_circle"
+            android:orientation="vertical"
+            android:layout_above="@id/bg_rectangle"
+            android:background="@mipmap/bg_circle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="34dp"
+            android:id="@+id/cancel"
+            android:layout_width="30dp"
+            android:layout_height="30dp">
+
+        <ImageView
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/ic_turn_off"
+                android:layout_width="14dp"
+                android:layout_height="14dp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+            android:id="@+id/luzhuanggou_item"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/ic_luzhaung"
+            android:layout_marginBottom="20dp"
+            android:layout_width="52dp"
+            android:layout_height="52dp"/>
+
+    <ImageView
+            android:id="@+id/boduan_item"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/ic_boduan"
+            android:layout_marginBottom="20dp"
+            android:visibility="invisible"
+            android:layout_width="52dp"
+            android:layout_height="52dp"/>
+    <ImageView
+            android:id="@+id/heyue_item"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/ic_heyue"
+            android:layout_marginBottom="20dp"
+            android:visibility="invisible"
+            android:layout_width="52dp"
+            android:layout_height="52dp"/>
+    <ImageView
+            android:id="@+id/yanjiu_item"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible"
+            android:src="@mipmap/ic_yanjiu"
+            android:layout_marginBottom="20dp"
+            android:layout_width="52dp"
+            android:layout_height="52dp"/>
+    <ImageView
+            android:id="@+id/dingpan_item"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/ic_dingpan"
+            android:layout_marginBottom="20dp"
+            android:visibility="invisible"
+            android:layout_width="46dp"
+            android:layout_height="46dp"/>
+    <ImageView
+            android:id="@+id/xiaoxi_item"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/ic_xiaoxi"
+            android:visibility="invisible"
+            android:layout_marginBottom="20dp"
+            android:layout_width="46dp"
+            android:layout_height="46dp"/>
+    <ImageView
+            android:id="@+id/jiqi_item"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/ic_jiqi"
+            android:layout_marginBottom="20dp"
+            android:visibility="invisible"
+            android:layout_width="46dp"
+            android:layout_height="46dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="41dp">
+
+        <View
+                android:background="@color/color_EDF0F2"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+        <TextView
+                android:id="@+id/time"
+                android:text="一小时"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+        />
+
+        <View
+                android:background="@color/color_EDF0F2"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+        <TextView
+                android:id="@+id/buy"
+                android:textColor="@color/zijin_increasing_color"
+                android:text="1331.49万"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+        />
+
+        <View
+                android:background="@color/color_EDF0F2"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+        <TextView
+                android:id="@+id/sell"
+                android:text="1亿"
+                android:textColor="@color/zijin_decreasing_color"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+        />
+
+        <View
+                android:background="@color/color_EDF0F2"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+        <TextView
+                android:id="@+id/netVolume"
+                android:text="1亿"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+        />
+
+        <View
+                android:background="@color/color_EDF0F2"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <View
+            android:background="@color/color_EDF0F2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+</LinearLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FCFCFC"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                tools:context="com.btetop.activity.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lan_chi_logo"
+        android:background="#FCFCFC">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FCFCFC"
+            android:orientation="vertical">
+
+            <include layout="@layout/login_title_layout" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="68dp"
+                android:src="@mipmap/login_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/bte_info"
+                android:textColor="#626A75"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:id="@+id/user_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text=""
+                android:textColor="#308CDD"
+                android:textSize="@dimen/font_14" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="46dp">
+
+                <EditText
+                    android:id="@+id/register_phone_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:layout_toLeftOf="@+id/tv_register_yanZhengMa"
+                    android:background="@null"
+                    android:hint="请输入验证码"
+                    android:includeFontPadding="false"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="5dp"
+                    android:textColor="@color/color_626A75"
+                    android:textColorHint="@color/color_626A75_50"
+                    android:textCursorDrawable="@drawable/edittext_cursor_bg"
+                    android:textSize="@dimen/font_14" />
+
+
+                <TextView
+                    android:id="@+id/tv_register_yanZhengMa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/rectangle"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:text="发送验证码"
+                    android:textColor="@color/color_626A75_50"
+                    android:textSize="@dimen/font_12" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="8dp"
+                android:background="#E6EBF0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/register_phone_yaMa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/pwd_eyes"
+                    android:background="@null"
+                    android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:hint="请设置新密码(6-12位字母和数字组合)"
+                    android:includeFontPadding="false"
+                    android:inputType="textPassword"
+                    android:maxLength="12"
+                    android:padding="5dp"
+                    android:textColor="@color/color_626A75"
+                    android:textColorHint="@color/color_626A75_50"
+                    android:textCursorDrawable="@drawable/edittext_cursor_bg"
+                    android:textSize="@dimen/font_14" />
+
+                <ImageView
+                    android:id="@+id/pwd_eyes"
+                    android:layout_width="20dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/eyes_closed_login" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="8dp"
+                android:background="#E6EBF0" />
+
+            <TextView
+                android:id="@+id/tv_register_login"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/rectangle_full"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="确定"
+                android:textColor="@color/color_626A75_50"
+                android:textSize="@dimen/font_18" />
+
+            <LinearLayout
+                android:id="@+id/register_ll_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="点击确定即表示同意"
+                    android:textColor="@color/color_626A75_50"
+                    android:textSize="@dimen/font_12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="《比特易户使用协议》"
+                    android:textColor="#626A75"
+                    android:textSize="@dimen/font_12" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/lan_chi_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_12"
+        android:layout_marginTop="@dimen/margin_10"
+        android:src="@mipmap/login_lanchi_logo" />
+</RelativeLayout>

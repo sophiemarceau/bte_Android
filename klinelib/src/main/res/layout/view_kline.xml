@@ -1,0 +1,139 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:background="@color/white">
+
+    <!--<include layout="@layout/kline_header_layout"/>-->
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_coin_info"
+    >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_gravity="bottom">
+
+            <!--middle指标-->
+            <TextView
+                android:id="@+id/tv_middle_indicators"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="8sp"
+                tools:text="交易量"/>
+
+            <com.guoziwei.klinelib.chart.AppCombinedChart
+                android:id="@+id/vol_chart"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+            />
+
+
+            <com.guoziwei.klinelib.chart.AppCombinedChart
+                android:id="@+id/extra_chart"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bottom_chart_height"
+                android:layout_alignParentBottom="true"
+            />
+
+
+            <!--附图指标-->
+            <TextView
+                android:id="@+id/tv_extra_indicators"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/extra_chart"
+                android:layout_marginLeft="5dp"
+                android:textSize="8sp"
+                tools:text="附图指标"
+
+            />
+
+
+        </RelativeLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/volume_profile"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:background="@color/full_transparent"
+                android:layout_marginBottom="180dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        </LinearLayout>
+
+        <com.guoziwei.klinelib.chart.AppCombinedChart
+            android:id="@+id/price_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <ImageView
+                android:id="@+id/ic_full"
+                android:src="@mipmap/ic_full"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="185dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+    <!--主图指标-->
+    <TextView
+            android:id="@+id/tv_main_indicators"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_coin_info"
+            android:layout_marginLeft="5dp"
+            android:textSize="8sp"
+            tools:text="主图指标"
+    />
+
+    <TextView
+        android:id="@+id/tv_time_line_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_main_indicators"
+        android:layout_marginLeft="5dp"
+        android:text="涨幅:"
+        android:textColor="@color/color_AAAEB3"
+        android:textSize="8sp"
+    />
+    <TextView
+        android:id="@+id/tv_time_line_up_values"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_main_indicators"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/tv_time_line_up"
+        android:text="0%"
+        android:textSize="8sp"
+    />
+    <TextView
+        android:id="@+id/tv_time_line_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_main_indicators"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tv_time_line_up_values"
+        android:text="振幅:"
+        android:textColor="@color/color_AAAEB3"
+        android:textSize="8sp"
+    />
+    <TextView
+        android:id="@+id/tv_time_line_down_values"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_main_indicators"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/tv_time_line_down"
+        android:text="0%"
+        android:textSize="8sp"
+    />
+</RelativeLayout>

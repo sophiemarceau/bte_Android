@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+
+
+    <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/base_tv"
+                    tools:text="ETC"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            <TextView
+                    tools:text="/"
+                    android:textSize="10sp"
+                    android:textColor="@color/color_626A75_60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            <TextView
+                    android:id="@+id/quote_tv"
+                    tools:text="USDT"
+                    android:textSize="10sp"
+                    android:textColor="@color/color_626A75_60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/exchange_tv"
+                android:textSize="10sp"
+                android:textColor="@color/color_60_866"
+                tools:text="Okex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/image_container_ll"
+            android:layout_width="60dp"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:paddingRight="16dp"
+            android:layout_height="match_parent">
+        <ImageView
+                android:id="@+id/image_check"
+                android:src="@drawable/selector_xuanfu"
+                android:layout_width="15dp"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <View
+            android:layout_alignParentBottom="true"
+            android:background="#ffe6ebf0"
+            android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</RelativeLayout>

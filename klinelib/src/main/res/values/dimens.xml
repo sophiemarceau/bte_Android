@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_chart_height">100dp</dimen>
+    <dimen name="all_bottom_chart_height">180dp</dimen>
+    <dimen name="chart_padding_right">57dp</dimen>
+    <dimen name="right_padding">50dp</dimen>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:background="@color/color_fafa"
+        android:layout_height="match_parent">
+
+    <include
+            android:id="@+id/title"
+            layout="@layout/head_layout"/>
+
+    <ListView
+            android:layout_below="@id/title"
+            android:layout_above="@+id/postCommentll"
+            android:id="@+id/listview"
+            tools:listitem="@layout/adapter_shequ_detail_item"
+            android:dividerHeight="0dp"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+    />
+    <LinearLayout
+            android:id="@+id/postCommentll"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:background="#ffdbdee2"
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+        <TextView
+                android:background="@drawable/bg_post_comment_button"
+                android:text="发表我的评论"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textSize="14sp"
+                android:textColor="@color/color_626A75"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

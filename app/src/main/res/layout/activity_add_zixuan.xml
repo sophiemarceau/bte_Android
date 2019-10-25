@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="@color/color_fafa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+            android:id="@+id/header_layout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+
+
+        <ImageView
+                android:id="@+id/img_fan_hui"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:scaleType="center"
+                android:src="@mipmap/back"/>
+        <EditText
+                android:id="@+id/tv_search_coin_pair"
+                android:hint=" 请输入要搜索的币种"
+                android:textSize="12sp"
+                android:background="@drawable/bg_add_zixuan_search"
+                android:drawableLeft="@mipmap/ic_search"
+                android:paddingRight="6dp"
+                android:paddingLeft="6dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/color_626A75_40"
+                android:layout_centerInParent="true"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textCursorDrawable="@drawable/edittext_cursor_bg"
+                android:singleLine="true"
+                android:imeOptions="actionSearch"
+                android:layout_height="30dp"/>
+
+        <TextView
+                android:id="@+id/complete"
+                android:text="完成"
+                android:layout_gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textSize="16sp"
+                android:textColor="@color/color_626A75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/recommendLayout"
+            android:layout_below="@+id/header_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                android:textColor="@color/color_626A75"
+                android:text="热门搜索"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <LinearLayout
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+            <TextView
+                    android:id="@+id/queryBtc"
+                    android:text="BTC"
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_search_recommend"
+                    android:textColor="@color/color_626A75"
+                    android:gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="61dp"
+                    android:layout_height="22dp"/>
+
+            <TextView
+                    android:id="@+id/queryEth"
+                    android:text="ETH"
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_search_recommend"
+                    android:textColor="@color/color_626A75"
+                    android:gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="61dp"
+                    android:layout_height="22dp"/>
+
+            <TextView
+                    android:id="@+id/queryBch"
+                    android:text="BCH"
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_search_recommend"
+                    android:textColor="@color/color_626A75"
+                    android:gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="61dp"
+                    android:layout_height="22dp"/>
+            <TextView
+                    android:id="@+id/queryEos"
+                    android:text="EOS"
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_search_recommend"
+                    android:textColor="@color/color_626A75"
+                    android:gravity="center"
+                    android:layout_width="61dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_height="22dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ListView
+            android:id="@+id/listview"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:layout_below="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    </ListView>
+</RelativeLayout>

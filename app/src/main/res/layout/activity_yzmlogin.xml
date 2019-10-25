@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFCFC"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.btetop.activity.YZMLoginActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lan_chi_logo"
+        android:layout_below="@+id/head"
+        android:fitsSystemWindows="true"
+    >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#FCFCFC">
+
+                <LinearLayout
+                    android:id="@+id/ll_yzmlogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FCFCFC"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/login_logo"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/bte_info"
+                        android:textColor="#626A75"
+                        android:textSize="@dimen/font_16"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="45dp"
+                        android:layout_marginTop="50dp">
+
+                        <EditText
+                            android:id="@+id/ed_phone_num"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:layout_toLeftOf="@+id/tv_yanZhengMa"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:hint="请输入手机号码"
+                            android:includeFontPadding="false"
+                            android:inputType="number"
+                            android:maxLength="11"
+                            android:padding="5dp"
+                            android:textColor="@color/color_626A75"
+                            android:textColorHint="@color/color_626A75_50"
+                            android:textCursorDrawable="@drawable/edittext_cursor_bg"
+                            android:textSize="@dimen/font_14"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_yanZhengMa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp"
+                            android:text="发送验证码"
+                            android:textColor="@color/color_626A75_50"
+                            android:textSize="@dimen/font_12"/>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="46dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#E6EBF0"/>
+
+                    <EditText
+                        android:id="@+id/ed_phone_yaMa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="45dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@null"
+                        android:hint="请输入短信验证码"
+                        android:includeFontPadding="false"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:padding="5dp"
+                        android:textColor="@color/color_626A75"
+                        android:textColorHint="@color/color_626A75_50"
+                        android:textCursorDrawable="@drawable/edittext_cursor_bg"
+                        android:textSize="@dimen/font_14"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="46dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#E6EBF0"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="45dp"
+                        android:layout_marginTop="30dp">
+
+                        <TextView
+                            android:id="@+id/tv_invite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp"
+                            android:text="请输入邀请码(选填)"
+                            android:textColor="@color/color_626A75_50"
+                            android:textSize="@dimen/font_12"/>
+
+                        <EditText
+                            android:id="@+id/ed_tv_invite"
+                            android:layout_width="match_parent"
+                            android:layout_height="34dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:layout_toRightOf="@+id/tv_invite"
+                            android:gravity="center_vertical"
+                            android:hint=""
+                            android:includeFontPadding="false"
+                            android:inputType="number"
+                            android:maxLength="11"
+                            android:padding="5dp"
+                            android:textColor="@color/color_626A75"
+                            android:textColorHint="@color/color_626A75_50"
+                            android:textCursorDrawable="@drawable/edittext_cursor_bg"
+                            android:textSize="@dimen/font_14"
+                            android:theme="@style/MyEditText"/>
+
+
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/tv_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="45dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/rectangle_full"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="登  录"
+                        android:textColor="@color/color_626A75_50"
+                        android:textSize="@dimen/font_18"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_agreement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="45dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                    >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="点击登录即表示同意"
+                            android:textColor="@color/color_626A75_50"
+                            android:textSize="@dimen/font_12"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="《比特易用户使用协议》"
+                            android:textColor="#626A75"
+                            android:textSize="@dimen/font_12"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_change_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_yzmlogin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:includeFontPadding="false"
+                    android:padding="3dp"
+                    android:text="账号密码登录"
+                    android:textColor="@color/color_308CDD"
+                    android:textSize="@dimen/font_14"/>
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/lan_chi_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="@dimen/margin_10"
+        android:src="@mipmap/login_lanchi_logo"/>
+    <include
+        android:id="@+id/head"
+        layout="@layout/login_title_layout"/>
+</RelativeLayout>

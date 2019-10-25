@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_color"
+    android:orientation="vertical"
+    tools:context="com.btetop.activity.RechargeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/base_color">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/base_color"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/about_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/transparent">
+
+                <ImageView
+                    android:id="@+id/recharge_fan_hui"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="center"
+                    android:src="@mipmap/login_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:includeFontPadding="false"
+                    android:text="充值"
+                    android:textColor="@color/color_626A75"
+                    android:textSize="@dimen/font_18" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_E6EBF0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:background="@color/color_FAF4F2"
+                android:paddingBottom="@dimen/margin_8"
+                android:paddingLeft="@dimen/margin_16"
+                android:paddingRight="@dimen/font_16"
+                android:paddingTop="@dimen/margin_8"
+                android:text="目前仅支持BTC交易，请将您持有的BTC转入以下地址，任何非BTC资产充值到此地址后不可找回！\t\n需要一个网络确认才能到账，到账后策略跟随成功，收益情况可直接通过我的账户进行查看！"
+                android:textColor="@color/color_FF6B28"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/recharge_img_code"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp" />
+
+            <TextView
+                android:id="@+id/recharge_address"
+                android:layout_width="232dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:textColor="@color/color_626A75"
+                android:textSize="@dimen/font_15" />
+
+            <TextView
+                android:id="@+id/copy_address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="70dp"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/recharge_btn_blue"
+                android:gravity="center"
+                android:text="复制收款地址"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/font_16" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

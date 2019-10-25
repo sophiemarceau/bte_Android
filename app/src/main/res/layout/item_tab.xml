@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="44dp" xmlns:tools="http://schemas.android.com/tools"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="12sp"
+        android:typeface="normal"
+        android:textStyle="bold"
+        tools:text="讨论"
+        android:textColor="@color/color_626A75"
+
+        />
+    <TextView
+        android:id="@+id/tv_subTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="25人"
+        android:textColor="@color/color_626A75_50"
+        />
+    <TextView
+        android:id="@+id/tv_bubble"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:textSize="10sp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/transparent"
+        android:background="@drawable/shape_cycle_red"
+        />
+</RelativeLayout>

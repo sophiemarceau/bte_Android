@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/color_white"
+>
+
+    <ImageView
+            android:id="@+id/img_fan_hui"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/margin_16"
+            android:scaleType="center"
+            android:src="@mipmap/back"/>
+
+    <TextView
+            android:id="@+id/tran_title_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            tools:text="详情"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/font_18"/>
+
+    <ImageView
+            android:id="@+id/tran_share_detail"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="10dp"
+            android:scaleType="center"
+            android:src="@mipmap/share"
+            android:visibility="gone"
+    />
+    <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E6EBF0"/>
+</RelativeLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+            <TextView
+                    android:id="@+id/tv_info_usd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:textColor="@color/main_info_color_red"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="6,481.69"
+            />
+
+            <TextView
+                    android:id="@+id/tv_info_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_info_usd"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/tv_info_usd"
+                    android:textColor="@color/main_info_color_red"
+                    android:textSize="12sp"
+                    tools:text="-5.18%"
+            />
+
+            <RelativeLayout
+                    android:id="@+id/pairContainer"
+                    android:layout_toLeftOf="@+id/airBlock"
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="86dp"
+                    android:paddingLeft="2dp"
+                    android:layout_height="47dp">
+
+                <TextView
+                        android:id="@+id/select_pair_exchange"
+                        android:text="okex"
+                        android:textSize="10sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/color_626A75_80"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <TextView
+                        android:id="@+id/pair_pair"
+                        android:layout_below="@+id/select_pair_exchange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/color_626A75_80"
+                        android:text="BTC/USDT"
+                />
+
+
+                <ImageView
+                        android:id="@+id/iv_pair"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/pair_pair"
+                        android:layout_marginBottom="2dp"
+                        android:layout_toRightOf="@+id/pair_pair"
+                        android:background="@mipmap/more_pic"
+                />
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/tv_info_rmb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_info_usd"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="6dp"
+                    android:text=""
+                    android:textColor="@color/color_626A75_60"
+                    android:textSize="12sp"
+            />
+            <TextView
+                    android:id="@+id/tv_24_vol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_info_rmb"
+                    android:layout_marginLeft="16dp"
+                    android:text="24h量/额:"
+                    android:textColor="@color/color_626A75_60"
+                    android:textSize="12sp"
+            />
+            <TextView
+                    android:id="@+id/tv_24_vol_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_24_vol"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/tv_24_vol"
+                    android:maxLines="1"
+                    android:textColor="@color/color_626A75_80"
+                    android:textSize="12sp"
+                    tools:text="2.14万"
+            />
+            <TextView
+                    android:id="@+id/tv_24_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_24_vol_value"
+                    android:layout_toRightOf="@+id/tv_24_vol_value"
+                    android:text="/"
+                    android:textColor="@color/color_626A75_80"
+                    android:textSize="12sp"
+            />
+            <TextView
+                    android:id="@+id/tv_24_amount_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_24_amount"
+                    android:layout_toRightOf="@+id/tv_24_amount"
+                    android:maxLines="1"
+                    android:textColor="@color/color_626A75_80"
+                    android:textSize="12sp"
+                    tools:text="1.36亿Usdt"
+            />
+
+            <LinearLayout
+                    android:id="@+id/airBlock"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+            >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="风险高(100)"
+                        android:textColor="@color/color_626A75"
+                        android:textSize="8sp"/>
+
+                <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="52dp">
+
+                    <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+                        <TextView
+                                android:id="@+id/tv_air"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/color_626A75"
+                                android:textSize="16sp"
+                                tools:text="44.44"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="空气指数"
+                                android:textColor="@color/color_626A75"
+                                android:textSize="8sp"/>
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                            android:id="@+id/bg_air"
+                            android:layout_width="10dp"
+                            android:layout_height="55dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@mipmap/bg_air"/>
+                    <ImageView
+                            android:id="@+id/right_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:src="@mipmap/ic_right_arrow"/>
+
+                </RelativeLayout>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="风险较低(1)"
+                        android:textColor="@color/color_626A75"
+                        android:textSize="8sp"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <include
+                layout="@layout/fragment_time_line"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        />
+
+        <View
+                android:background="#edf0f2"
+                android:layout_width="match_parent" android:layout_height="8dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

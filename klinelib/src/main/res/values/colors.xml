@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_info_color_red">#FF4040</color>
+    <color name="color_10_4040">#1AFF4040</color>
+    <color name="main_info_color_green">#228B22</color>
+    <color name="main_color_red">#29AC4E</color>
+    <color name="main_color_green">#CC1414</color>
+
+    <color name="bg_heyue_transparent">#F2EDF0F2</color>
+
+    <color name="full_transparent">#00000000</color>
+
+
+    <!--图表-->
+
+    <color name="marker_color">#be945c</color>
+    <color name="bottom_marker_color">#5CACF3</color>
+    <color name="marker_text_color">#333333</color>
+    <color name="chart_grid_color">#333333</color>
+    <color name="right_marker_bg_color">#308CDD</color>
+
+    <color name="border_color">#9BA0A8</color>
+
+    <color name="ma5">#F0BC79</color>
+    <!--<color name="ma5">#E39FE3</color>-->
+    <!--<color name="ma10">#F0BC79</color>-->
+    <color name="ma10">#E39FE3</color>
+    <color name="ma20">#34A9FF</color>
+    <color name="ma30">#aed3d3</color>
+
+    <color name="ema7">#30D2B3</color>
+    <color name="ema30">#FFB400</color>
+
+    <color name="dif">#ACD2E5</color>
+    <color name="dea">#F0BC79</color>
+
+    <color name="k">#b2dbef</color>
+    <color name="d">#fdc071</color>
+    <color name="j">#ea9bea</color>
+
+    <color name="rsi1">#62BEA7</color>
+    <color name="rsi2">#CFB85B</color>
+    <color name="rsi3">#c24ea9</color>
+
+    <color name="up">#F0BC79</color>
+    <color name="mb">#78C078</color>
+    <color name="dn">#E39FE3</color>
+
+    <color name="increasing_color">@color/main_color_red</color>
+    <color name="decreasing_color">@color/main_color_green</color>
+
+    <color name="zijin_increasing_color">#228B22</color>
+    <color name="zijin_decreasing_color">#FF4040</color>
+
+    <color name="normal_line_color">#308cdd</color>
+    <color name="ave_color">#666</color>
+    <color name="axis_color">#4d626A75</color>
+    <color name="chart_info_color">#88000000</color>
+    <color name="chart_no_data_color">#be945c</color>
+    <color name="limit_color">#E5E5EE</color>
+    <color name="white">#fff</color>
+
+    <color name="color_AAAEB3">#AAAEB3</color>
+    <color name="color_info_kline">#EAEEF0</color>
+    <color name="color_626A75_40">#ADAFB6</color>
+    <color name="color_626A75_60">#9BA0A8</color>
+    <color name="color_626A75_80">#808790</color>
+    <color name="color_626A75">#626A75</color>
+    <color name="color_1BAC75">#1BAC75</color>
+
+    <!--柱状图图标-->
+    <color name="color_limitline">#A2ABFF</color>
+    <color name="color_rect">#DEE1FF</color>
+</resources>

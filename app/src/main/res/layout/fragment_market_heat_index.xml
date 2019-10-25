@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--<include-->
+    <!--layout="@layout/head_layout"/>-->
+
+    <TextView
+        android:id="@+id/tv_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:text="热度指数是比热易独家推出的市场热度指标，客观结合大数据分析，第一时间发掘热门投资币种数值越大，热度最高。"
+        android:textColor="@color/color_626A75_80"
+        android:textSize="@dimen/font_12"/>
+
+
+    <!--<include layout="@layout/item_market_heat_index"/>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_market_heat_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#E6EBF0"
+        android:dividerHeight="1dp"
+        tools:listitem="@layout/item_market_heat_index"/>
+
+</LinearLayout>

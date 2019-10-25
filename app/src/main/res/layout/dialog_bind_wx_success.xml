@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="244dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/logout_dialog">
+
+        <LinearLayout
+            android:id="@+id/dialog_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/transparent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/color_626A75_60"
+                android:textSize="@dimen/font_16" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_E6EBF0" />
+
+            <TextView
+                android:id="@+id/dialog_tv_sure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="去关注"
+                android:textColor="#308CDD"
+                android:textSize="@dimen/font_16" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bottom_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/dialog_linear_layout"
+            android:background="@color/color_E6EBF0" />
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_toLeftOf="@+id/iv_mid"
+            android:gravity="center"
+            android:layout_marginTop="28dp"
+            android:background="@mipmap/inviting_friends_logo"
+        />
+
+        <ImageView
+            android:id="@+id/iv_mid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:background="@mipmap/bind_wx_middle"
+        />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="48dp"
+            android:layout_marginTop="28dp"
+            android:layout_height="48dp"
+            android:layout_toRightOf="@+id/iv_mid"
+            android:gravity="center"
+            android:background="@mipmap/inviting_friends_wx"
+        />
+
+        <TextView
+            android:id="@+id/dialog_tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_line"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:layout_below="@+id/iv_mid"
+            android:gravity="center"
+            android:text="微信搜索并关注“比特易”及时获取行情及币种推荐通知"
+            android:textColor="#626A75"
+            android:textSize="@dimen/font_16" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

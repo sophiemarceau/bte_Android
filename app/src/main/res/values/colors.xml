@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_line">#88CCD5DC</color>
+    <color name="color_308CDD">#308CDD</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_349AF3">#349AF3</color>
+    <color name="color_65B0F3">#65B0F3</color>
+    <color name="color_D8D8D8">#D8D8D8</color>
+    <color name="transparent">#00000000</color>
+    <color name="clolor_80_black">#cd000000</color>
+    <color name="title_color">#5c5c5c</color>
+    <color name="progress_bg_color">#D4EFFF</color>
+    <color name="progress_color">#5F98E7</color>
+    <color name="home_pop_select">#5CACF3</color>
+    <color name="base_color">#FAFAFA</color>
+    <color name="color_black">#000000</color>
+    <color name="color_93A0B5">#93A0B5</color>
+    <color name="color_E8EBED">#E8EBED</color>
+    <color name="color_ACB0B6">#ACB0B6</color>
+    <color name="color_292C33">#292C33</color>
+    <color name="color_FF6B28">#FF6B28</color>
+    <color name="color_1BAC75">#1BAC75</color>
+    <color name="color_e8e28">#ff1e8e28</color>
+    <color name="color_E6EBF0">#E6EBF0</color>
+    <color name="color_F0F8FF">#F0F8FF</color>
+    <color name="color_7A8499">#7A8499</color>
+    <color name="color_525866">#525866</color>
+    <color name="color_A3D97D">#A3D97D</color>
+    <color name="color_FE413F">#FE413F</color>
+    <color name="color_FF4040">#FF4040</color>
+    <color name="color_20_FF4040">#33FF4040</color>
+    <color name="color_228B22">#228B22</color>
+    <color name="color_20_228B22">#33228B22</color>
+    <color name="color_b22_10">#1A228B22</color>
+    <color name="color_626A75">#626A75</color>
+    <color name="color_fafa">#FAFAFA</color>
+    <color name="color_626A75_10">#1A626A75</color>
+    <color name="color_half_626A75">#80626A75</color>
+    <color name="color_AAAEB3">#AAAEB3</color>
+    <color name="color_868C95">#868C95</color>
+    <color name="color_EDFOF2">#EDF0F2</color>
+    <color name="color_4CABFE">#4CABFE</color>
+    <color name="color_53AFFF">#53AFFF</color>
+    <color name="color_1389EF">#1389EF</color>
+    <color name="color_B2B6BB">#B2B6BB</color>
+    <color name="color_ABAEB4">#ABAEB4</color>
+    <color name="color_359DF6">#359DF6</color>
+    <color name="color_FF7C08">#FF7C08</color>
+    <color name="color_FCFEFF">#FCFEFF</color>
+    <color name="color_E5EAEE">#E5EAEE</color>
+    <color name="color_FF8E00">#FF8E00</color>
+    <color name="color_80_000000">#CD000000</color>
+
+    <color name="color_CCC6C6">#CCC6C6</color>
+    <color name="color_5A5A5A">#5A5A5A</color>
+    <color name="color_579270">#579270</color>
+    <color name="color_F08B18">#F08B18</color>
+    <color name="color_626A75_80">#808790</color>
+    <color name="color_626A75_50">#AFB3B8</color>
+    <color name="color_626A75_60">#9BA0A8</color>
+    <color name="color_626A75_40">#ADAFB6</color>
+    <color name="color_F0F0F0">#F0F0F0</color>
+    <color name="color_FAF4F2">#FAF4F2</color>
+    <color name="color_168BF0">#168BF0</color>
+    <color name="color_E1E5EA">#E1E5EA</color>
+    <color name="color_EDF0F2">#EDF0F2</color>
+    <color name="color_000000">#000000</color>
+
+    <color name="color_all_866">#525866</color>
+    <color name="color_60_866">#99525866</color>
+
+
+    <!--k线下面的menu-->
+    <color name="text_select">#308CDD</color>
+    <color name="text_normal">#626A75</color>
+    <color name="select">@color/color_white</color>
+    <color name="no_selected">@color/color_white</color>
+    <color name="select_bottom_view">@color/text_select</color>
+    <color name="unselect_bottom_view">@color/select</color>
+
+    <!--合约狗-->
+    <color name="color_90_866">#99525866</color>
+
+    <!--个人设置-->
+    <color name="person_backgroud">#F6F7FD</color>
+    <color name="person_gray">#B3D1D6DE</color>
+    <color name="person_title">#626A75</color>
+    <color name="person_content">#ADAFB6</color>
+    <color name="gray_line">#E6EBF0</color>
+
+    <!--悬浮框-->
+    <color name="xuanfu_green">#14CE48</color>
+    <color name="xuanfu_red">#FF4040</color>
+
+    <!--社区-->
+    <color name="shequ_normal_color">#626A75</color>
+    <color name="shequ_yello_color">#FF6B28</color>
+</resources>

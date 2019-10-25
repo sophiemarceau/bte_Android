@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="42dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="41dp">
+
+        <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/time1"
+                        android:textSize="10sp"
+                        android:textColor="@color/color_60_866"
+                        tools:text="02:34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                <TextView
+                        android:id="@+id/time2"
+                        android:textSize="10sp"
+                        android:textColor="@color/color_60_866"
+                        tools:text="02:34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+                android:id="@+id/exchange"
+                android:textSize="12sp"
+                android:textColor="@color/color_626A75"
+                android:gravity="center"
+                tools:text="OKEX"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+
+        <TextView
+                android:id="@+id/buyoOrSell"
+                android:textSize="12sp"
+                android:textColor="@color/color_626A75"
+                android:gravity="center"
+                tools:text="买入"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+        <TextView
+                android:id="@+id/price"
+                android:textSize="12sp"
+                android:textColor="@color/color_626A75"
+                android:gravity="center"
+                tools:text="$6910.24"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+
+        <TextView
+                android:id="@+id/countPrice"
+                android:textSize="12sp"
+                android:textColor="@color/color_626A75"
+                android:gravity="center"
+                tools:text="02:34"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    <View
+            android:background="@color/color_E6EBF0"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+</LinearLayout>

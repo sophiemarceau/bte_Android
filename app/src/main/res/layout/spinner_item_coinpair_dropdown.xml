@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="#308CDD"
+              android:orientation="vertical"
+>
+
+    <LinearLayout
+            android:id="@+id/pairContainer"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:layout_width="86dp"
+            android:layout_height="47dp">
+
+        <TextView
+                android:id="@+id/tv_exchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="12"
+                android:maxLines="1"
+                android:text="okEx"
+                android:textColor="@color/color_white"
+                android:textSize="10sp"
+        />
+        <TextView
+                android:id="@+id/tv_pair_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="BTC/USDT"
+                android:singleLine="true"
+                android:textColor="@color/color_white">
+        </TextView>
+    </LinearLayout>
+
+    <View
+            android:background="#1ADFE5EC "
+            android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</RelativeLayout>

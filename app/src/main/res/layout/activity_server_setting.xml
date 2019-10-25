@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+>
+    <include layout="@layout/head_layout"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="服务开启/关闭设置"
+        android:textColor="@color/person_title"
+        android:textSize="12sp"
+    />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+    >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/person_gray"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="13.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10.5dp"
+            android:text="合约狗"
+            android:textColor="@color/person_title"
+            android:textSize="16sp"
+        />
+
+        <ch.ielse.view.SwitchView
+            android:id="@+id/switch_button_heyue"
+            android:layout_width="32dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            app:isOpened="false"
+            app:primaryColor="@color/common_botton_bar_blue"
+            app:primaryColorDark="@color/common_botton_bar_blue"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/person_gray"
+        />
+        <ch.ielse.view.SwitchView
+            android:id="@+id/switch_button_luzhuang"
+            android:layout_width="32dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            app:isOpened="false"
+            app:primaryColor="@color/common_botton_bar_blue"
+            app:primaryColorDark="@color/common_botton_bar_blue"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="13.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10.5dp"
+            android:text="撸庄狗"
+            android:textColor="@color/person_title"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/person_gray"
+    />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <ch.ielse.view.SwitchView
+            android:id="@+id/switch_button_boduan"
+            android:layout_width="32dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            app:isOpened="false"
+            app:primaryColor="@color/common_botton_bar_blue"
+            app:primaryColorDark="@color/common_botton_bar_blue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="13.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10.5dp"
+            android:text="波段狗"
+            android:textColor="@color/person_title"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

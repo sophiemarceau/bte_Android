@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_zixuan"
+            android:layout_marginLeft="65dp"
+            android:padding="1dp"
+            android:layout_marginRight="65dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+        <TextView
+                android:id="@+id/item_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@drawable/zixuan_item_tv_selctor"
+                android:background="@drawable/selector_zixuan_item"
+                android:text="我的自选"
+                android:gravity="center"
+        />
+
+        <TextView
+                android:id="@+id/item_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@drawable/zixuan_item_tv_selctor"
+                android:background="@drawable/selector_zixuan_item"
+                android:text="我的资产"
+                android:gravity="center"
+        />
+
+    </LinearLayout>
+
+    <View
+            android:layout_marginTop="5dp"
+            android:background="#ffe6ebf0"
+            android:layout_width="match_parent" android:layout_height="0.5dp"/>
+
+    <com.btetop.widget.IsCanScrollViewPager
+            android:id="@+id/fragment_vieapager"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+        />
+</LinearLayout>

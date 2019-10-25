@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+>
+
+    <TextView
+        android:id="@+id/tv_item_market_head_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:drawablePadding="10dp"
+        android:drawableRight="@mipmap/more_hui"
+        android:textColor="@color/color_626A75"
+        android:textSize="@dimen/font_13"
+        android:text="币种/成交额"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_626A75_10"/>
+
+    <TextView
+        android:id="@+id/tv_item_market_head_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="43dp"
+        android:layout_toLeftOf="@+id/tv_item_market_head_change"
+        android:textColor="@color/color_626A75"
+        android:textSize="@dimen/font_13"
+        android:text="价格"/>
+
+    <TextView
+        android:id="@+id/tv_item_market_head_change"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:drawablePadding="10dp"
+        android:drawableRight="@mipmap/more_hui"
+        android:textColor="@color/color_626A75"
+        android:textSize="@dimen/font_13"
+        android:text="24h涨跌幅"/>
+</RelativeLayout>
+
+
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+    <TextView
+            android:id="@+id/title"
+            android:layout_centerInParent="true"
+            tools:text="匿名"
+            android:textColor="@color/color_525866"
+            android:textSize="@dimen/font_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+            android:id="@+id/layout_message_center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="25dp"
+            android:layout_marginRight="16dp"
+            android:layout_height="21dp">
+
+        <ImageView
+                android:layout_alignParentBottom="true"
+                android:src="@mipmap/ic_message_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:text="99"
+                android:textSize="9sp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_shape_radio"
+        />
+
+    </RelativeLayout>
+
+    <View
+            android:layout_alignParentBottom="true"
+            android:background="#ffe7ebf0"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+</RelativeLayout>

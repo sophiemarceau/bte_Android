@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="32dp">
+
+    <!--//上面-->
+    <TextView
+            android:id="@+id/price"
+            android:text="6800"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="@color/color_all_866"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+    <!--下面-->
+    <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+        <RelativeLayout
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+            <View
+                    android:id="@+id/left_progress"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/color_20_FF4040"
+                    android:layout_width="100dp"
+                    android:layout_height="12dp"/>
+             <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:id="@+id/leftCount"
+                        tools:text="6800"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:textColor="@color/color_all_866"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                <View
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <View android:layout_width="1dp" android:layout_height="match_parent"/>
+
+
+        <RelativeLayout
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+
+
+            <View
+                    android:id="@+id/right_progress"
+                    android:layout_centerVertical="true"
+                    android:background="@color/color_20_228B22"
+                    android:layout_width="100dp"
+                    android:layout_height="12dp"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                <View
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+                <TextView
+                        android:id="@+id/rightCount"
+                        tools:text="6800"
+                        android:gravity="center"
+                        android:textSize="10sp"
+                        android:textColor="@color/color_all_866"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
